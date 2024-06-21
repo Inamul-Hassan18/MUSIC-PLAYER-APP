@@ -1,0 +1,79 @@
+.flex{
+    display: flex;
+}
+.border{
+    border: 2px solid red;
+}
+.justify-content{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.bg-black{
+    background-color: rgb(241, 201, 228);
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+
+.rounded{
+    border-radius: 8px;
+}
+.bg-grey{
+    background-color:#350724 ;
+    
+}
+.p-1{
+    padding: 10px;
+}
+.m-1{
+    margin: 8px;
+}
+
+
+
+
+
+/* scroll bar */
+
+/* Webkit (Chrome, Safari, newer versions of Opera) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4a4a4a; /* Dark grey */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1f1f1f; /* Almost black */
+}
+
+/* Firefox */
+* {
+  scrollbar-color: #4a4a4a #1f1f1f;
+}
+
+/* Microsoft Edge and Internet Explorer */
+* {
+  scrollbar-face-color: #4a4a4a;
+  scrollbar-track-color: #1f1f1f;
+  scrollbar-arrow-color: #ffffff;
+}
+
+/* Optional: Hide scrollbar buttons in Firefox */
+* {
+  scrollbar-width: thin;
+}
+
+/* Optional: Customize scrollbar buttons in Firefox */
+* {
+  scrollbar-button-color: #ffffff;
+}
+
+.gap{
+    gap: 10px;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="src/output.cs s">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="utility.css">
+
+<body>
+ 
+
+<!-- Create a single button for play/pause toggle -->
+<button class = "toggle" onclick="togglePlayPause()">play</button>
+
+<!-- Create an audio element -->
+<audio controls id="musicPlayer">
+    Your browser does not support the audio element.
+</audio>
+
+
+  
+    <div class="container flex bg-black">
+        <div class="left">
+            
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo ">ping tunes</div>
+                <ul>
+                    <li> <img class="invert" src="home.svg" alt="home">Home</li>
+                    <li> <img class="invert" src="search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="playlist flex bg-grey rounded"><img class="invert" src="playlist.svg" alt="">
+                    <h2>your library</h2>
+                </div>
+                <div class="songslist">
+        
+                    <ul>
+                        <h3>songs</h3>
+                       <li><div class="songbtn" onclick="playSong('songs/1.mp3')">ajab si</div></li>
+                       <li><div class="songbtn" onclick="playSong('songs/2.mp3')">mein agar kahoon</div></li>
+                       <li><div class="songbtn" onclick="playSong('songs/3.mp3')">chaleya</div></li>
+                       <li><div class="songbtn" onclick="playSong('songs/4.mp3')">hamaari adhuri kahaani</div></li>
+                       <li><div class="songbtn" onclick="playSong('songs/5.mp3')">idhazin oram</div></li>
+                       <li><div class="songbtn" onclick="playSong('songs/6.mp3')">kahaani suno</div></li>
+                       <li><div class="songbtn" onclick="playSong('songs/8.mp3')">kesariya</div></li>
+                       <li><div class="songbtn" onclick="playSong('songs/9.mp3')">labon ko</div></li>
+                       <li><div class="songbtn" onclick="playSong('songs/10.mp3')">tu maan meri jaan</div></li>
+                       <li><div class="songbtn" onclick="playSong('songs/11.mp3')">maine royaan</div></li>
+                       <li><div class="songbtn" onclick="playSong('songs/12.mp3')">malang sajna</div></li>
+                       
+
+                        <!-- Add more buttons for additional songs -->
+                    </ul>
+                </div>
+                <div class="footer flex">
+                    <div class="legal"><a href="">Legal</a></div>
+                    <div class="privacy center"><a href="">Privacy center</a></div>
+                    <div class="privacy policy"><a href="">Privacy policy</a></div>
+                    <div class="about ads"><a href="">About ads</a></div>
+                    <div class="cookies"><a href="">Cookies</a></div>
+                    <div class="accessibility"><a href="">Accessibility</a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right ">
+        <div class="header flex bg-grey rounded m-1 p-1">
+            <div class="nav">
+                <img class="invert" src="icon-1.svg" alt="">
+                <img class="invert" src="icon-2.svg" alt="">
+            </div>
+            <div class="buttons gap">
+                <button class="signup-btn">sign up</button>
+                <button class="login-btn">login</button>
+            </div>
+        </div>
+        <div class="spotifyplaylist bg-grey rounded m-1 p-1 ">
+            <h1>heart full Playlist</h1>
+            <div class="cardcontainer flex">
+                <div class="card border rounded bg-black m-1 p-1">
+                    <div class="play">
+                        <img src="play.svg" alt="">
+                    </div>
+                    <img src="card images/card1.jpeg" alt="">
+                    <h2 class="songclick" onclick="showSongs('romantic')">romantic</h2>
+                    <p>chill beats lofi beats every weak</p>
+                </div>
+
+                <div class="card border rounded bg-black m-1 p-1">
+                    <img src="card images/card 3.jpeg" alt="">
+                    <h2 class="songclick" onclick="showSongs('heartBreak')">heart break</h2>
+                    <p>Just lean back and enjoy relaxed beats.</p>
+                </div>
+
+                <div class="card border rounded bg-black m-1 p-1">
+                    <img src="card images/card 4.jpeg" alt="">
+                    <h2>all out 2000s</h2>
+                    <p>The biggest songs of the 2020s.</p>
+                </div>
+
+                <div class="card border rounded bg-black m-1 p-1">
+                    <img src="card images/card 5.jpeg" alt="">
+                    <h2>lofi beats</h2>
+                    <p>Soft instrumental Jazz for all your activities.</p>
+                </div>
+
+                <div class="card border rounded bg-black m-1 p-1">
+                    <img src="card images/card 2.jpeg" alt="">
+                    <h2>today's top hits</h2>
+                    <p>Ariana Grande is on top of the Hottest 50!</p>
+                </div>
+
+                <div class="card border rounded bg-black m-1 p-1">
+                    <img src="card images/card1.jpeg" alt="">
+                    <h2>lofi beats</h2>
+                    <p>chill beats lofi beats every weak</p>
+                </div>
+
+
+
+
+                <!-- <div class="card border rounded bg-black m-1 p-1">
+                    <img src="card images/card1.jpeg" alt="">
+                    <h2>lofi beats</h2>
+                    <p>chill beats lofi beats every weak</p>
+                </div>
+
+                <div class="card border rounded bg-black m-1 p-1">
+                    <img src="card images/card1.jpeg" alt="">
+                    <h2>lofi beats</h2>
+                    <p>chill beats lofi beats every weak</p>
+                </div>
+
+                <div class="card border rounded bg-black m-1 p-1">
+                    <img src="card images/card1.jpeg" alt="">
+                    <h2>lofi beats</h2>
+                    <p>chill beats lofi beats every weak</p>
+                </div>
+                <div class="card border rounded bg-black m-1 p-1">
+                    <img src="card images/card1.jpeg" alt="">
+                    <h2>lofi beats</h2>
+                    <p>chill beats lofi beats every weak</p>
+                </div>
+                <div class="card border rounded bg-black m-1 p-1">
+                    <img src="card images/card1.jpeg" alt="">
+                    <h2>lofi beats</h2>
+                    <p>chill beats lofi beats every weak</p>
+                </div>
+                <div class="card border rounded bg-black m-1 p-1">
+                    <img src="card images/card1.jpeg" alt="">
+                    <h2>lofi beats</h2>
+                    <p>chill beats lofi beats every weak</p>
+                </div>
+                <div class="card border rounded bg-black m-1 p-1">
+                    <img src="card images/card1.jpeg" alt="">
+                    <h2>lofi beats</h2>
+                    <p>chill beats lofi beats every weak</p>
+                </div>  -->
+
+
+
+
+
+
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
